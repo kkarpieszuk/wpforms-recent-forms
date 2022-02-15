@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WPForms Recent Forms
- * Description: Adds quick links to recent forms in WPForms menu in the admin bar.
+ * Description: Adds quick links to recently edited forms in WPForms menu in the admin bar.
  * Version: 0.1
  */
 
