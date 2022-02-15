@@ -44,7 +44,7 @@ class RecentForms {
 		// Parent node for recent forms.
 		$nodes[] = [
 			'parent' => 'wpforms-menu',
-			'title'  => 'Recent forms:',
+			'title'  => esc_html__( 'Recent forms', 'wpforms' ),
 			'id'     => 'wpforms-recent-forms',
 			'href'   => '#',
 		];
@@ -81,7 +81,7 @@ class RecentForms {
 			$nodes[] = [
 				'parent' => 'wpforms-recent-form-' . $form->ID,
 				'id'     => 'wpforms-recent-form-' . $form->ID . '-edit',
-				'title'  => 'Edit',
+				'title'  => esc_html__( 'Edit', 'wpforms' ),
 				'href'   => esc_url( $edit_link ),
 			];
 
@@ -89,7 +89,7 @@ class RecentForms {
 			$nodes[] = [
 				'parent' => 'wpforms-recent-form-' . $form->ID,
 				'id'     => 'wpforms-recent-form-' . $form->ID . '-preview',
-				'title'  => 'Preview',
+				'title'  => esc_html__( 'Preview', 'wpforms' ),
 				'href'   => esc_url( wpforms_get_form_preview_url( $form->ID ) ),
 			];
 		}
