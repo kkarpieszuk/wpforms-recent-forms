@@ -3,6 +3,7 @@
  * Plugin Name: WPForms Recent Forms
  * Description: Adds quick links to recently edited forms in WPForms menu in the admin bar.
  * Version: 0.1
+ * Plugin URI: https://github.com/kkarpieszuk/wpforms-recent-forms
  */
 
 namespace WPForms\DevTools;
@@ -52,8 +53,8 @@ class RecentForms {
 		$recent_forms = get_posts(
 			[
 				'post_type' => 'wpforms',
-				'order_by'  => 'post_modified',
-				'order'     => 'ASC',
+				'orderby'   => 'modified',
+				'order'     => 'DESC',
 			]
 		);
 
