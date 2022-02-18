@@ -45,7 +45,7 @@ class RecentForms {
 		// Parent node for recent forms.
 		$nodes[] = [
 			'parent' => 'wpforms-menu',
-			'title'  => esc_html__( 'Recent forms', 'wpforms' ),
+			'title'  => esc_html__( 'Recent Forms', 'wpforms' ),
 			'id'     => 'wpforms-recent-forms',
 			'href'   => '#',
 		];
