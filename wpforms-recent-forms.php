@@ -52,9 +52,10 @@ class RecentForms {
 
 		$recent_forms = get_posts(
 			[
-				'post_type' => 'wpforms',
-				'orderby'   => 'modified',
-				'order'     => 'DESC',
+				'post_type'   => 'wpforms',
+				'orderby'     => 'modified',
+				'order'       => 'DESC',
+				'numberposts' => 20,
 			]
 		);
 
